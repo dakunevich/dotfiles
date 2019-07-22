@@ -15,3 +15,6 @@ Dot files I use in my everyday.
 ## Terminal emulators:
 [Alacritty](https://github.com/jwilm/alacritty)
 
+## Fonts
+[top-programming-fonts](https://github.com/hbin/top-programming-fonts)
+
