@@ -10,3 +10,8 @@ Dot files I use in my everyday.
 [bash-powerline](https://github.com/riobard/bash-powerline)
 
 [solarized](https://github.com/altercation/solarized)
+
+
+## Terminal emulators:
+[Alacritty](https://github.com/jwilm/alacritty)
+
