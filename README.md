@@ -1,5 +1,8 @@
 # Configuration
 
+## Shell prompt
+[Starship](https://starship.rs/)
+
 ## dotfiles
 Dot files I use in my everyday.
 
