@@ -29,7 +29,7 @@ config.macos_window_background_blur = 30
 -- On macOS, 'RESIZE|INTEGRATED_BUTTONS' also looks nice if
 -- you want to keep the window controls visible and integrate
 -- them into the tab bar.
-config.window_decorations = 'RESIZE'
+config.window_decorations = 'INTEGRATED_BUTTONS'
 -- Sets the font for the window frame (tab bar)
 config.window_frame = {
   -- Berkeley Mono for me again, though an idea could be to try a
@@ -172,6 +172,13 @@ config.keys = {
     -- Actually send CTRL + A key to the terminal
     action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' },
   },
+  {
+    key = 't',
+    mods = 'CMD',
+    action = wezterm.action.SpawnCommandInNewTab {
+      cwd = wezterm.home_dir,
+    },
+  },
 
   move_pane('j', 'Down'),
   move_pane('k', 'Up'),
@@ -204,6 +211,17 @@ config.keys = {
     mods = 'LEADER',
     -- Present a list of existing workspaces
     action = wezterm.action.ShowLauncherArgs { flags = 'FUZZY|WORKSPACES' },
+  },
+  -- Switch tabs
+  {
+    key="LeftArrow",
+    mods="CMD",
+    action=wezterm.action{ActivateTabRelative=-1}
+  },
+  {
+    key="RightArrow",
+    mods="CMD",
+    action=wezterm.action{ActivateTabRelative=1}
   },
 }
 
