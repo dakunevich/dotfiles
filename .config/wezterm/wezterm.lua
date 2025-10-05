@@ -18,6 +18,7 @@ config.set_environment_variables = {
 config.color_scheme = 'Dark Pastel'
 
 -- config.font = wezterm.font('Berkeley Mono')
+config.window_close_confirmation = "NeverPrompt"
 config.font = wezterm.font('MesloLGS Nerd Font Mono')
 config.font_size = 13
 
