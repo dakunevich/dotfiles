@@ -235,5 +235,19 @@ config.key_tables = {
   },
 }
 
+},
+  -- Switch tabs
+  {
+    key="LeftArrow",
+    mods="CMD",
+    action=wezterm.action{ActivateTabRelative=-1}
+  },
+  {
+    key="RightArrow",
+    mods="CMD",
+    action=wezterm.action{ActivateTabRelative=1}
+  },
+}
+
 return config
 
